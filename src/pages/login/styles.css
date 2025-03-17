@@ -1,0 +1,55 @@
+.login-container {
+    background-image: url('../../assets/login-backgorund.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.login-container .form-wrapper {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 20px;
+    width: 300px;
+    position: relative;
+}
+
+.login-container .form-wrapper .icon-login {
+    background-image: url('../../assets/login-page-background.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    height: 6rem;
+    width: 100%;
+    display: inline-block;
+}
+
+.login-container .form-wrapper .label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.overlay.show {
+    visibility: visible;
+}

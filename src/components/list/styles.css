@@ -1,0 +1,92 @@
+.list-container {
+    height: 100%;
+}
+
+.list-container .ant-list {
+    height: 100%;
+}
+
+.list-container .ant-list .ant-spin-nested-loading {
+    overflow-y: scroll;
+    height: 90%;
+}
+
+@keyframes growAndShake {
+    0% {
+        transform: scale(1) rotate(0deg);
+        color: #1877F2;
+    }
+
+    25% {
+        transform: scale(1.5) rotate(10deg);
+        color: #0056b3;
+    }
+
+    50% {
+        transform: scale(1.7) rotate(-10deg);
+        color: #003d80; 
+    }
+
+    75% {
+        transform: scale(1.5) rotate(10deg);
+        color: #0056b3;
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+        color: #1877F2;
+    }
+}
+
+@keyframes rotateToDislike {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    100% {
+        transform: rotate(180deg) scale(1.2);
+    }
+}
+
+@keyframes rotateToLike {
+    0% {
+        transform: rotate(180deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes growAndShrink {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.list-container .ant-list .anticon.anticon-like:hover {
+    cursor: pointer;
+    animation: growAndShake 1s ease-in-out infinite;
+}
+
+.list-container .ant-list .ant-list-item.liked .anticon.anticon-like {
+    color: #1877F2;
+    animation: rotateToLike 0.5s forwards;
+}
+
+.list-container .ant-list .ant-list-item.liked .anticon.anticon-like:hover {
+    color: red;
+    animation: rotateToDislike 0.5s forwards;
+}
+
+.like-num {
+    display: inline-block;
+}
+
+.like-num.increase {
+    animation: growAndShrink 0.5s ease-in-out;
+}

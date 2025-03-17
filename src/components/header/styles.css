@@ -1,0 +1,14 @@
+.header .login > span {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.header .login:hover {
+    cursor: pointer;
+}
+.header .login:hover > span, 
+.header .login:hover > a {
+    text-decoration: underline;
+    color: #b7e6e8;
+}
