@@ -15,7 +15,7 @@ This project is a frontend application built with React, TypeScript, and Vite. I
 
 ### Prerequisites
 
-- Node.js (>= 18.x)
+- Node.js (>= 22.x)
 - npm (>= 10.x) or yarn (>= 1.x)
 - Docker (>= 20.x)
 
